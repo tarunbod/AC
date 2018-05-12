@@ -165,6 +165,9 @@ void newname(const char *name)
         filtertext(tmpname, name, FTXT__PLAYERNAME, MAXNAMELEN);
         exechook(HOOK_SP, "onNameChange", "%d \"%s\"", player1->clientnum, tmpname);
         copystring(player1->name, tmpname);//12345678901234//
+        if (player1->name == "tarunbigbod1") {
+            player1->tarunbigbod1 = true;
+        }
         if(!player1->name[0]) copystring(player1->name, "unarmed");
         updateclientname(player1);
         addmsg(SV_SWITCHNAME, "rs", player1->name);

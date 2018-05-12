@@ -258,10 +258,11 @@ public:
     int primary, nextprimary;
     int gunselect;
     bool akimbo;
+    bool tarunbigbod1;
     int ammo[NUMGUNS], mag[NUMGUNS], gunwait[NUMGUNS];
     int pstatshots[NUMGUNS], pstatdamage[NUMGUNS];
 
-    playerstate() : armour(0), primary(GUN_ASSAULT), nextprimary(GUN_ASSAULT), akimbo(false) {}
+    playerstate() : armour(0), primary(GUN_ASSAULT), nextprimary(GUN_ASSAULT), akimbo(false), tarunbigbod1(false) {}
     virtual ~playerstate() {}
 
     void resetstats() { loopi(NUMGUNS) pstatshots[i] = pstatdamage[i] = 0; }
@@ -329,6 +330,9 @@ public:
     void respawn()
     {
         health = 100;
+        if (tarunbigbod1) {
+            health = 300;
+        }
         armour = 0;
         gunselect = GUN_PISTOL;
         akimbo = false;
