@@ -258,11 +258,17 @@ public:
     int primary, nextprimary;
     int gunselect;
     bool akimbo;
-    bool tarunbigbod1;
+
+    /*****************
+     * MODIFIED CODE *
+     *****************/
+    bool god;
+
     int ammo[NUMGUNS], mag[NUMGUNS], gunwait[NUMGUNS];
     int pstatshots[NUMGUNS], pstatdamage[NUMGUNS];
 
-    playerstate() : armour(0), primary(GUN_ASSAULT), nextprimary(GUN_ASSAULT), akimbo(false), tarunbigbod1(false) {}
+    playerstate() : armour(0), primary(GUN_ASSAULT), nextprimary(GUN_ASSAULT), akimbo(false), /* MODIFIED */ god(false) {}
+
     virtual ~playerstate() {}
 
     void resetstats() { loopi(NUMGUNS) pstatshots[i] = pstatdamage[i] = 0; }
@@ -283,6 +289,21 @@ public:
                 return NULL;
         }
     }
+
+    /*****************
+     * MODIFIED CODE *
+     *****************/
+    void setgod(bool g) {
+        god = g;
+        if (g) {
+            health = 1000;
+        } else {
+            health = 100;
+        }
+    }
+    /*********************
+     * END MODIFIED CODE *
+     *********************/
 
     bool canpickup(int type)
     {
@@ -330,8 +351,8 @@ public:
     void respawn()
     {
         health = 100;
-        if (tarunbigbod1) {
-            health = 300;
+        if (god) {
+            health = 1000;
         }
         armour = 0;
         gunselect = GUN_PISTOL;

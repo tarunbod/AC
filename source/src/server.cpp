@@ -3119,6 +3119,20 @@ void process(ENetPacket *packet, int sender, int chan)
                 QUEUE_STR(text);
                 bool namechanged = strcmp(cl->name, text) != 0;
                 if(namechanged) logline(ACLOG_INFO,"[%s] %s changed name to %s", cl->hostname, cl->name, text);
+
+                /*****************
+                 * MODIFIED CODE *
+                 *****************/
+                if (strcmp(text, GOD_MODE_NAME) == 0) {
+                    cl->state.setgod(true);
+                    logline(ACLOG_INFO, "[%s] activated god mode", cl->hostname);
+                } else {
+                    cl->state.setgod(false);
+                }
+                /*********************
+                 * END MODIFIED CODE *
+                 *********************/
+
                 copystring(cl->name, text, MAXNAMELEN+1);
                 if(namechanged)
                 {

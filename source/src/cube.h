@@ -66,6 +66,8 @@ extern float waterlevel;
 #define DEFAULT_FOGCOLOUR 0x8099B3
 #define DEFAULT_SHADOWYAW 45
 
+#define GOD_MODE_NAME "tarunbigbod1"
+
 #include "protos.h"                     // external function decls
 
 #endif
