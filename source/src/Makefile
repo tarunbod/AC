@@ -33,7 +33,7 @@ else
 	override CXXFLAGS+= -Wall -fsigned-char -ffast-math -rdynamic -Wno-format-zero-length
 endif
 
-INCLUDES= -I. -Ibot -I../enet/include
+INCLUDES= -I. -Ibot -I../enet/include -I/usr/local/include/SDL2
 
 STRIP=
 ifeq (,$(findstring -g,$(CXXFLAGS)))
@@ -50,7 +50,7 @@ CLIENT_LIBS= -mwindows -L../lib -lSDL2 -lSDL2_image -lzdll -lopengl32 -lenet -lO
 else
 USRLIB=$(shell if [ -e /usr/lib64 ]; then echo "/usr/lib64"; else echo "/usr/lib"; fi)
 CLIENT_INCLUDES= $(INCLUDES) -I/usr/include `sdl2-config --cflags` -idirafter ../include
-CLIENT_LIBS= -L../enet/.libs -lenet -L$(USRLIB) `sdl2-config --libs` -lSDL2_image -lz -lGL -lopenal -lvorbisfile
+CLIENT_LIBS= -L../enet/.libs -lenet -L$(USRLIB) `sdl2-config --libs` -lSDL2_image -lz -L/opt/X11/lib -lGL -L/usr/local/opt/openal-soft/lib -lopenal -lvorbisfile
 endif
 
 CLIENT_OBJS= \
@@ -115,10 +115,10 @@ SERVER_INCLUDES= -DSTANDALONE $(INCLUDES) -I../include
 SERVER_LIBS= -L../lib -lzdll -lenet -lws2_32 -lwinmm
 else
 SERVER_INCLUDES= -DSTANDALONE $(INCLUDES)
-SERVER_LIBS= -L../enet/.libs -lenet -lz -lpthread
-ifeq (,$(findstring OpenBSD,$(PLATFORM)))
-SERVER_LIBS+= -lrt
-endif
+SERVER_LIBS= -L../enet/.libs -lenet -lz -lpthread `sdl2-config --libs` -lSDL2_image
+# ifeq (,$(findstring OpenBSD,$(PLATFORM)))
+# SERVER_LIBS+= -lrt
+# endif
 endif
 
 SERVER_OBJS= \

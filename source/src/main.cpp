@@ -1115,6 +1115,7 @@ void sanitychecks()
 
 int main(int argc, char **argv)
 {
+    printf("AYY LMAOOOO");
     DEBUGCODE(sanitychecks());
     extern struct servercommandline scl;
     #ifdef WIN32
