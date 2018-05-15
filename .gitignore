@@ -39,3 +39,6 @@ packetlog.txt
 profile/*
 
 .vscode/
+
+serverlog_*.txt
+xxxxreadmaps_log.txt
