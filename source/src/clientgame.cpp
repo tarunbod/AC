@@ -167,7 +167,9 @@ void newname(const char *name)
         copystring(player1->name, tmpname);//12345678901234//
         /*****************
          * MODIFIED CODE *
-         *****************
+         *****************/
+
+
         if (!strcmp(player1->name, GOD_MODE_NAME)) {
             conoutf("God Mode Activated");
             player1->setgod(true);

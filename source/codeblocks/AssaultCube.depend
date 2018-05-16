@@ -1,5 +1,5 @@
 # depslib dependency file v1.0
-1526233769 source:c:\users\tarun\documents\projects\ac\source\src\cube.h
+1526345679 source:c:\users\tarun\documents\projects\ac\source\src\cube.h
 	"platform.h"
 	"tools.h"
 	"geom.h"
@@ -15,7 +15,7 @@
 	"console.h"
 	"protos.h"
 
-1526162338 c:\users\tarun\documents\projects\ac\source\src\platform.h
+1526345672 c:\users\tarun\documents\projects\ac\source\src\platform.h
 	<string.h>
 	<stdlib.h>
 	<stdio.h>
@@ -45,12 +45,16 @@
 	"vorbis/vorbisfile.h"
 	<setjmp.h>
 
-1526162337 c:\users\tarun\documents\projects\ac\source\include\zlib.h
+1526345672 c:\users\tarun\documents\projects\ac\source\include\zlib.h
 	"zconf.h"
 
-1526162337 c:\users\tarun\documents\projects\ac\source\include\zconf.h
+1526345672 c:\users\tarun\documents\projects\ac\source\include\zconf.h
+	<stddef.h>
 	<windows.h>
+	<limits.h>
 	<sys/types.h>
+	<stdarg.h>
+	<stddef.h>
 	<unistd.h>
 	<unixio.h>
 
@@ -85,33 +89,44 @@
 1526162326 c:\users\tarun\documents\projects\ac\source\enet\include\enet\callbacks.h
 	<stdlib.h>
 
-1526162327 c:\users\tarun\documents\projects\ac\source\include\sdl.h
+1526345672 c:\users\tarun\documents\projects\ac\source\include\sdl.h
 	"SDL_main.h"
 	"SDL_stdinc.h"
+	"SDL_assert.h"
+	"SDL_atomic.h"
 	"SDL_audio.h"
-	"SDL_cdrom.h"
+	"SDL_clipboard.h"
 	"SDL_cpuinfo.h"
 	"SDL_endian.h"
 	"SDL_error.h"
 	"SDL_events.h"
+	"SDL_filesystem.h"
+	"SDL_gamecontroller.h"
+	"SDL_haptic.h"
+	"SDL_hints.h"
+	"SDL_joystick.h"
 	"SDL_loadso.h"
+	"SDL_log.h"
+	"SDL_messagebox.h"
 	"SDL_mutex.h"
+	"SDL_power.h"
+	"SDL_render.h"
 	"SDL_rwops.h"
+	"SDL_shape.h"
+	"SDL_system.h"
 	"SDL_thread.h"
 	"SDL_timer.h"
-	"SDL_video.h"
 	"SDL_version.h"
+	"SDL_video.h"
 	"begin_code.h"
 	"close_code.h"
 
-1526162336 c:\users\tarun\documents\projects\ac\source\include\sdl_main.h
+1526345672 c:\users\tarun\documents\projects\ac\source\include\sdl_main.h
 	"SDL_stdinc.h"
 	"begin_code.h"
 	"close_code.h"
-	"begin_code.h"
-	"close_code.h"
 
-1526162337 c:\users\tarun\documents\projects\ac\source\include\sdl_stdinc.h
+1526345672 c:\users\tarun\documents\projects\ac\source\include\sdl_stdinc.h
 	"SDL_config.h"
 	<sys/types.h>
 	<stdio.h>
@@ -125,10 +140,13 @@
 	<memory.h>
 	<string.h>
 	<strings.h>
+	<wchar.h>
 	<inttypes.h>
 	<stdint.h>
 	<ctype.h>
-	<iconv.h>
+	<math.h>
+	<float.h>
+	<sal.h>
 	"begin_code.h"
 	<alloca.h>
 	<malloc.h>
@@ -137,30 +155,35 @@
 	<stdlib.h>
 	"close_code.h"
 
-1526162335 c:\users\tarun\documents\projects\ac\source\include\sdl_config.h
+1526345672 c:\users\tarun\documents\projects\ac\source\include\sdl_config.h
 	"SDL_platform.h"
-	"SDL_config_dreamcast.h"
-	"SDL_config_macos.h"
+	"SDL_config_windows.h"
+	"SDL_config_winrt.h"
 	"SDL_config_macosx.h"
-	"SDL_config_symbian.h"
-	"SDL_config_win32.h"
-	"SDL_config_os2.h"
+	"SDL_config_iphoneos.h"
+	"SDL_config_android.h"
+	"SDL_config_psp.h"
 	"SDL_config_minimal.h"
 
-1526162336 c:\users\tarun\documents\projects\ac\source\include\sdl_platform.h
+1526345672 c:\users\tarun\documents\projects\ac\source\include\sdl_platform.h
+	"AvailabilityMacros.h"
+	"TargetConditionals.h"
+	<winapifamily.h>
+	"begin_code.h"
+	"close_code.h"
 
-1526162335 c:\users\tarun\documents\projects\ac\source\include\sdl_config_macosx.h
+1526345672 c:\users\tarun\documents\projects\ac\source\include\sdl_config_macosx.h
 	"SDL_platform.h"
 	<AvailabilityMacros.h>
 
 1526162335 c:\users\tarun\documents\projects\ac\source\include\sdl_config_win32.h
 	"SDL_platform.h"
 
-1526162337 c:\users\tarun\documents\projects\ac\source\include\begin_code.h
+1526345672 c:\users\tarun\documents\projects\ac\source\include\begin_code.h
 
-1526162337 c:\users\tarun\documents\projects\ac\source\include\close_code.h
+1526345672 c:\users\tarun\documents\projects\ac\source\include\close_code.h
 
-1526162335 c:\users\tarun\documents\projects\ac\source\include\sdl_audio.h
+1526345672 c:\users\tarun\documents\projects\ac\source\include\sdl_audio.h
 	"SDL_stdinc.h"
 	"SDL_error.h"
 	"SDL_endian.h"
@@ -170,32 +193,35 @@
 	"begin_code.h"
 	"close_code.h"
 
-1526162335 c:\users\tarun\documents\projects\ac\source\include\sdl_error.h
+1526345672 c:\users\tarun\documents\projects\ac\source\include\sdl_error.h
 	"SDL_stdinc.h"
 	"begin_code.h"
 	"close_code.h"
 
-1526162335 c:\users\tarun\documents\projects\ac\source\include\sdl_endian.h
+1526345672 c:\users\tarun\documents\projects\ac\source\include\sdl_endian.h
 	"SDL_stdinc.h"
 	<endian.h>
 	"begin_code.h"
 	"close_code.h"
 
-1526162336 c:\users\tarun\documents\projects\ac\source\include\sdl_mutex.h
+1526345672 c:\users\tarun\documents\projects\ac\source\include\sdl_mutex.h
 	"SDL_stdinc.h"
 	"SDL_error.h"
 	"begin_code.h"
 	"close_code.h"
 
-1526162337 c:\users\tarun\documents\projects\ac\source\include\sdl_thread.h
+1526345672 c:\users\tarun\documents\projects\ac\source\include\sdl_thread.h
 	"SDL_stdinc.h"
 	"SDL_error.h"
+	"SDL_atomic.h"
 	"SDL_mutex.h"
 	"begin_code.h"
 	<process.h>
+	<process.h>
+	<stdlib.h>
 	"close_code.h"
 
-1526162336 c:\users\tarun\documents\projects\ac\source\include\sdl_rwops.h
+1526345672 c:\users\tarun\documents\projects\ac\source\include\sdl_rwops.h
 	"SDL_stdinc.h"
 	"SDL_error.h"
 	"begin_code.h"
@@ -207,19 +233,31 @@
 	"begin_code.h"
 	"close_code.h"
 
-1526162335 c:\users\tarun\documents\projects\ac\source\include\sdl_cpuinfo.h
+1526345672 c:\users\tarun\documents\projects\ac\source\include\sdl_cpuinfo.h
 	"SDL_stdinc.h"
+	<intrin.h>
+	<intrin.h>
+	<altivec.h>
+	<mm3dnow.h>
+	<immintrin.h>
+	<mmintrin.h>
+	<xmmintrin.h>
+	<emmintrin.h>
+	<pmmintrin.h>
 	"begin_code.h"
 	"close_code.h"
 
-1526162335 c:\users\tarun\documents\projects\ac\source\include\sdl_events.h
+1526345672 c:\users\tarun\documents\projects\ac\source\include\sdl_events.h
 	"SDL_stdinc.h"
 	"SDL_error.h"
-	"SDL_active.h"
+	"SDL_video.h"
 	"SDL_keyboard.h"
 	"SDL_mouse.h"
 	"SDL_joystick.h"
+	"SDL_gamecontroller.h"
 	"SDL_quit.h"
+	"SDL_gesture.h"
+	"SDL_touch.h"
 	"begin_code.h"
 	"close_code.h"
 
@@ -229,75 +267,71 @@
 	"begin_code.h"
 	"close_code.h"
 
-1526162335 c:\users\tarun\documents\projects\ac\source\include\sdl_keyboard.h
+1526345672 c:\users\tarun\documents\projects\ac\source\include\sdl_keyboard.h
 	"SDL_stdinc.h"
 	"SDL_error.h"
-	"SDL_keysym.h"
+	"SDL_keycode.h"
+	"SDL_video.h"
 	"begin_code.h"
 	"close_code.h"
 
 1526162336 c:\users\tarun\documents\projects\ac\source\include\sdl_keysym.h
 
-1526162336 c:\users\tarun\documents\projects\ac\source\include\sdl_mouse.h
+1526345672 c:\users\tarun\documents\projects\ac\source\include\sdl_mouse.h
 	"SDL_stdinc.h"
 	"SDL_error.h"
 	"SDL_video.h"
 	"begin_code.h"
 	"close_code.h"
 
-1526162337 c:\users\tarun\documents\projects\ac\source\include\sdl_video.h
+1526345672 c:\users\tarun\documents\projects\ac\source\include\sdl_video.h
 	"SDL_stdinc.h"
-	"SDL_error.h"
-	"SDL_rwops.h"
+	"SDL_pixels.h"
+	"SDL_rect.h"
+	"SDL_surface.h"
 	"begin_code.h"
 	"close_code.h"
 
-1526162335 c:\users\tarun\documents\projects\ac\source\include\sdl_joystick.h
-	"SDL_stdinc.h"
-	"SDL_error.h"
-	"begin_code.h"
-	"close_code.h"
-
-1526162336 c:\users\tarun\documents\projects\ac\source\include\sdl_quit.h
-	"SDL_stdinc.h"
-	"SDL_error.h"
-
-1526162336 c:\users\tarun\documents\projects\ac\source\include\sdl_loadso.h
+1526345672 c:\users\tarun\documents\projects\ac\source\include\sdl_joystick.h
 	"SDL_stdinc.h"
 	"SDL_error.h"
 	"begin_code.h"
 	"close_code.h"
 
-1526162337 c:\users\tarun\documents\projects\ac\source\include\sdl_timer.h
+1526345672 c:\users\tarun\documents\projects\ac\source\include\sdl_quit.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+
+1526345672 c:\users\tarun\documents\projects\ac\source\include\sdl_loadso.h
 	"SDL_stdinc.h"
 	"SDL_error.h"
 	"begin_code.h"
 	"close_code.h"
 
-1526162337 c:\users\tarun\documents\projects\ac\source\include\sdl_version.h
+1526345672 c:\users\tarun\documents\projects\ac\source\include\sdl_timer.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"begin_code.h"
+	"close_code.h"
+
+1526345672 c:\users\tarun\documents\projects\ac\source\include\sdl_version.h
 	"SDL_stdinc.h"
 	"begin_code.h"
 	"close_code.h"
 
-1526162335 c:\users\tarun\documents\projects\ac\source\include\sdl_image.h
+1526345672 c:\users\tarun\documents\projects\ac\source\include\sdl_image.h
 	"SDL.h"
 	"SDL_version.h"
 	"begin_code.h"
 	"close_code.h"
 
-1526162336 c:\users\tarun\documents\projects\ac\source\include\sdl_opengl.h
+1526345672 c:\users\tarun\documents\projects\ac\source\include\sdl_opengl.h
 	"SDL_config.h"
+	"gl_mangle.h"
 	<windows.h>
-	<OpenGL/gl.h>
-	<OpenGL/glu.h>
-	<gl.h>
-	<glu.h>
-	<GL/gl.h>
-	<GL/glu.h>
-	<windows.h>
-	<stddef.h>
+	"SDL_opengl_glext.h"
 
-1526162327 c:\users\tarun\documents\projects\ac\source\include\gl\glext.h
+1526345672 c:\users\tarun\documents\projects\ac\source\include\gl\glext.h
 	<windows.h>
 	<stddef.h>
 
@@ -323,20 +357,20 @@
 
 1526162326 c:\users\tarun\documents\projects\ac\source\include\al\alc.h
 
-1526162338 c:\users\tarun\documents\projects\ac\source\src\tools.h
+1526345672 c:\users\tarun\documents\projects\ac\source\src\tools.h
 	<iostream>
 
 1526162338 c:\users\tarun\documents\projects\ac\source\src\geom.h
 
 1526162338 c:\users\tarun\documents\projects\ac\source\src\model.h
 
-1526162338 c:\users\tarun\documents\projects\ac\source\src\protocol.h
+1526345672 c:\users\tarun\documents\projects\ac\source\src\protocol.h
 
 1526162338 c:\users\tarun\documents\projects\ac\source\src\sound.h
 
 1526162338 c:\users\tarun\documents\projects\ac\source\src\weapon.h
 
-1526234752 c:\users\tarun\documents\projects\ac\source\src\entity.h
+1526345679 c:\users\tarun\documents\projects\ac\source\src\entity.h
 
 1526162338 c:\users\tarun\documents\projects\ac\source\src\world.h
 
@@ -346,14 +380,14 @@
 
 1526162338 c:\users\tarun\documents\projects\ac\source\src\vote.h
 
-1526162338 c:\users\tarun\documents\projects\ac\source\src\console.h
+1526345672 c:\users\tarun\documents\projects\ac\source\src\console.h
 
-1526162338 c:\users\tarun\documents\projects\ac\source\src\protos.h
+1526345672 c:\users\tarun\documents\projects\ac\source\src\protos.h
 
 1526162337 source:c:\users\tarun\documents\projects\ac\source\src\audiomanager.cpp
 	"cube.h"
 
-1526233769 c:\users\tarun\documents\projects\ac\source\src\cube.h
+1526345679 c:\users\tarun\documents\projects\ac\source\src\cube.h
 	"platform.h"
 	"tools.h"
 	"geom.h"
@@ -369,7 +403,7 @@
 	"console.h"
 	"protos.h"
 
-1526162337 source:c:\users\tarun\documents\projects\ac\source\src\autodownload.cpp
+1526345672 source:c:\users\tarun\documents\projects\ac\source\src\autodownload.cpp
 	"cube.h"
 
 1526162337 source:c:\users\tarun\documents\projects\ac\source\src\bot\ac_bot.cpp
@@ -415,17 +449,15 @@
 	"cube.h"
 	"bot/bot.h"
 
-1526162338 source:c:\users\tarun\documents\projects\ac\source\src\clients2c.cpp
+1526345672 source:c:\users\tarun\documents\projects\ac\source\src\clients2c.cpp
 	"cube.h"
 	"bot/bot.h"
 
 1526180975 source:c:\users\tarun\documents\projects\ac\source\src\command.cpp
 	"cube.h"
 
-1526162338 source:c:\users\tarun\documents\projects\ac\source\src\console.cpp
+1526345672 source:c:\users\tarun\documents\projects\ac\source\src\console.cpp
 	"cube.h"
-	<X11/Xlib.h>
-	<SDL_syswm.h>
 
 1526162337 c:\users\tarun\documents\projects\ac\source\include\sdl_syswm.h
 	"SDL_stdinc.h"
@@ -452,10 +484,10 @@
 1526162338 source:c:\users\tarun\documents\projects\ac\source\src\docs.cpp
 	"cube.h"
 
-1526162338 source:c:\users\tarun\documents\projects\ac\source\src\editing.cpp
+1526345672 source:c:\users\tarun\documents\projects\ac\source\src\editing.cpp
 	"cube.h"
 
-1526162338 source:c:\users\tarun\documents\projects\ac\source\src\entities.cpp
+1526435292 source:c:\users\tarun\documents\projects\ac\source\src\entities.cpp
 	"cube.h"
 
 1526162338 source:c:\users\tarun\documents\projects\ac\source\src\http.cpp
@@ -467,13 +499,13 @@
 	<syslog.h>
 	<signal.h>
 
-1526170697 source:c:\users\tarun\documents\projects\ac\source\src\main.cpp
+1526345679 source:c:\users\tarun\documents\projects\ac\source\src\main.cpp
 	"cube.h"
 	"jpegenc.h"
 
 1526162338 c:\users\tarun\documents\projects\ac\source\src\jpegenc.h
 
-1526162338 source:c:\users\tarun\documents\projects\ac\source\src\menus.cpp
+1526345672 source:c:\users\tarun\documents\projects\ac\source\src\menus.cpp
 	"cube.h"
 
 1526162338 source:c:\users\tarun\documents\projects\ac\source\src\oggstream.cpp
@@ -494,15 +526,15 @@
 1526162338 source:c:\users\tarun\documents\projects\ac\source\src\rendercubes.cpp
 	"cube.h"
 
-1526162338 source:c:\users\tarun\documents\projects\ac\source\src\rendergl.cpp
+1526345672 source:c:\users\tarun\documents\projects\ac\source\src\rendergl.cpp
 	"cube.h"
 	"bot/bot.h"
 	"varray.h"
 
-1526162338 source:c:\users\tarun\documents\projects\ac\source\src\renderhud.cpp
+1526345672 source:c:\users\tarun\documents\projects\ac\source\src\renderhud.cpp
 	"cube.h"
 
-1526162338 source:c:\users\tarun\documents\projects\ac\source\src\rendermodel.cpp
+1526435025 source:c:\users\tarun\documents\projects\ac\source\src\rendermodel.cpp
 	"cube.h"
 	"tristrip.h"
 	"modelcache.h"
@@ -514,7 +546,7 @@
 
 1526162338 c:\users\tarun\documents\projects\ac\source\src\modelcache.h
 
-1526162338 c:\users\tarun\documents\projects\ac\source\src\vertmodel.h
+1526345672 c:\users\tarun\documents\projects\ac\source\src\vertmodel.h
 
 1526162338 c:\users\tarun\documents\projects\ac\source\src\md2.h
 
@@ -523,7 +555,7 @@
 1526162338 source:c:\users\tarun\documents\projects\ac\source\src\renderparticles.cpp
 	"cube.h"
 
-1526162338 source:c:\users\tarun\documents\projects\ac\source\src\rendertext.cpp
+1526345672 source:c:\users\tarun\documents\projects\ac\source\src\rendertext.cpp
 	"cube.h"
 
 1526162338 source:c:\users\tarun\documents\projects\ac\source\src\rndmap.cpp
@@ -532,7 +564,7 @@
 1526162338 source:c:\users\tarun\documents\projects\ac\source\src\scoreboard.cpp
 	"cube.h"
 
-1526234373 source:c:\users\tarun\documents\projects\ac\source\src\server.cpp
+1526345679 source:c:\users\tarun\documents\projects\ac\source\src\server.cpp
 	"cube.h"
 	"server.h"
 	"servercontroller.h"
@@ -555,7 +587,7 @@
 
 1526162338 c:\users\tarun\documents\projects\ac\source\src\serveractions.h
 
-1526162338 source:c:\users\tarun\documents\projects\ac\source\src\serverbrowser.cpp
+1526345672 source:c:\users\tarun\documents\projects\ac\source\src\serverbrowser.cpp
 	"cube.h"
 	"SDL_thread.h"
 
@@ -571,7 +603,7 @@
 1526162338 source:c:\users\tarun\documents\projects\ac\source\src\soundscheduler.cpp
 	"cube.h"
 
-1526162338 source:c:\users\tarun\documents\projects\ac\source\src\stream.cpp
+1526345672 source:c:\users\tarun\documents\projects\ac\source\src\stream.cpp
 	"cube.h"
 	<unistd.h>
 	<sys/stat.h>
@@ -579,7 +611,7 @@
 	<dirent.h>
 	<sys/statvfs.h>
 
-1526162338 source:c:\users\tarun\documents\projects\ac\source\src\texture.cpp
+1526345672 source:c:\users\tarun\documents\projects\ac\source\src\texture.cpp
 	"cube.h"
 	"scale.h"
 	"scale.h"
@@ -588,7 +620,7 @@
 
 1526162338 c:\users\tarun\documents\projects\ac\source\src\scale.h
 
-1526162338 source:c:\users\tarun\documents\projects\ac\source\src\tools.cpp
+1526345672 source:c:\users\tarun\documents\projects\ac\source\src\tools.cpp
 	"cube.h"
 	<execinfo.h>
 	"SDL_timer.h"
@@ -600,7 +632,7 @@
 1526162338 source:c:\users\tarun\documents\projects\ac\source\src\water.cpp
 	"cube.h"
 
-1526162338 source:c:\users\tarun\documents\projects\ac\source\src\weapon.cpp
+1526433221 source:c:\users\tarun\documents\projects\ac\source\src\weapon.cpp
 	"cube.h"
 	"bot/bot.h"
 	"hudgun.h"
@@ -620,7 +652,7 @@
 	"cube.h"
 	"bot/bot.h"
 
-1526162338 source:c:\users\tarun\documents\projects\ac\source\src\worldio.cpp
+1526345672 source:c:\users\tarun\documents\projects\ac\source\src\worldio.cpp
 	"cube.h"
 
 1526162338 source:c:\users\tarun\documents\projects\ac\source\src\worldlight.cpp
@@ -638,7 +670,152 @@
 1526162338 source:c:\users\tarun\documents\projects\ac\source\vcpp\assaultcube.rc
 	"winresrc.h"
 
-1526234307 source:c:\users\tarun\documents\projects\ac\source\src\clientgame.cpp
+1526426240 source:c:\users\tarun\documents\projects\ac\source\src\clientgame.cpp
 	"cube.h"
 	"bot/bot.h"
+
+1526345672 c:\users\tarun\documents\projects\ac\source\include\sdl_config_windows.h
+	"SDL_platform.h"
+
+1526345672 c:\users\tarun\documents\projects\ac\source\include\sdl_assert.h
+	"SDL_config.h"
+	"begin_code.h"
+	<signal.h>
+	"close_code.h"
+
+1526345672 c:\users\tarun\documents\projects\ac\source\include\sdl_atomic.h
+	"SDL_stdinc.h"
+	"SDL_platform.h"
+	"begin_code.h"
+	<mbarrier.h>
+	"close_code.h"
+
+1526345672 c:\users\tarun\documents\projects\ac\source\include\sdl_clipboard.h
+	"SDL_stdinc.h"
+	"begin_code.h"
+	"close_code.h"
+
+1526345672 c:\users\tarun\documents\projects\ac\source\include\sdl_pixels.h
+	"SDL_stdinc.h"
+	"SDL_endian.h"
+	"begin_code.h"
+	"close_code.h"
+
+1526345672 c:\users\tarun\documents\projects\ac\source\include\sdl_rect.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_pixels.h"
+	"SDL_rwops.h"
+	"begin_code.h"
+	"close_code.h"
+
+1526345672 c:\users\tarun\documents\projects\ac\source\include\sdl_surface.h
+	"SDL_stdinc.h"
+	"SDL_pixels.h"
+	"SDL_rect.h"
+	"SDL_blendmode.h"
+	"SDL_rwops.h"
+	"begin_code.h"
+	"close_code.h"
+
+1526345672 c:\users\tarun\documents\projects\ac\source\include\sdl_blendmode.h
+	"begin_code.h"
+	"close_code.h"
+
+1526345672 c:\users\tarun\documents\projects\ac\source\include\sdl_keycode.h
+	"SDL_stdinc.h"
+	"SDL_scancode.h"
+
+1526345672 c:\users\tarun\documents\projects\ac\source\include\sdl_scancode.h
+	"SDL_stdinc.h"
+
+1526345672 c:\users\tarun\documents\projects\ac\source\include\sdl_gamecontroller.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_rwops.h"
+	"SDL_joystick.h"
+	"begin_code.h"
+	"close_code.h"
+
+1526345672 c:\users\tarun\documents\projects\ac\source\include\sdl_gesture.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_video.h"
+	"SDL_touch.h"
+	"begin_code.h"
+	"close_code.h"
+
+1526345672 c:\users\tarun\documents\projects\ac\source\include\sdl_touch.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_video.h"
+	"begin_code.h"
+	"close_code.h"
+
+1526345672 c:\users\tarun\documents\projects\ac\source\include\sdl_filesystem.h
+	"SDL_stdinc.h"
+	"begin_code.h"
+	"close_code.h"
+
+1526345672 c:\users\tarun\documents\projects\ac\source\include\sdl_haptic.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_joystick.h"
+	"begin_code.h"
+	"close_code.h"
+
+1526345672 c:\users\tarun\documents\projects\ac\source\include\sdl_hints.h
+	"SDL_stdinc.h"
+	"begin_code.h"
+	"close_code.h"
+
+1526345672 c:\users\tarun\documents\projects\ac\source\include\sdl_log.h
+	"SDL_stdinc.h"
+	"begin_code.h"
+	"close_code.h"
+
+1526345672 c:\users\tarun\documents\projects\ac\source\include\sdl_messagebox.h
+	"SDL_stdinc.h"
+	"SDL_video.h"
+	"begin_code.h"
+	"close_code.h"
+
+1526345672 c:\users\tarun\documents\projects\ac\source\include\sdl_power.h
+	"SDL_stdinc.h"
+	"begin_code.h"
+	"close_code.h"
+
+1526345672 c:\users\tarun\documents\projects\ac\source\include\sdl_render.h
+	"SDL_stdinc.h"
+	"SDL_rect.h"
+	"SDL_video.h"
+	"begin_code.h"
+	"close_code.h"
+
+1526345672 c:\users\tarun\documents\projects\ac\source\include\sdl_shape.h
+	"SDL_stdinc.h"
+	"SDL_pixels.h"
+	"SDL_rect.h"
+	"SDL_surface.h"
+	"SDL_video.h"
+	"begin_code.h"
+	"close_code.h"
+
+1526345672 c:\users\tarun\documents\projects\ac\source\include\sdl_system.h
+	"SDL_stdinc.h"
+	"SDL_keyboard.h"
+	"SDL_render.h"
+	"SDL_video.h"
+	"begin_code.h"
+	"close_code.h"
+
+1526345672 c:\users\tarun\documents\projects\ac\source\include\sdl_opengl_glext.h
+	<windows.h>
+	<stddef.h>
+	<inttypes.h>
+	<inttypes.h>
+	<inttypes.h>
+	<stdint.h>
+	<stdint.h>
+	<inttypes.h>
 

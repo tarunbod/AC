@@ -1524,7 +1524,11 @@ void sniperrifle::renderaimhelp(bool teamwarning)
     if(scoped) drawscope();
     if(!editmode)
     {
-        if(scoped || teamwarning) drawcrosshair(owner, teamwarning ? CROSSHAIR_TEAMMATE : CROSSHAIR_SCOPE, NULL, 24.0f);
+        if(scoped || teamwarning) {
+            drawcrosshair(owner, teamwarning ? CROSSHAIR_TEAMMATE : CROSSHAIR_SCOPE, NULL, 24.0f);
+        } /* MODIFIED */ else {
+            drawcrosshair(owner, CROSSHAIR_DEFAULT, NULL, 24.0f);
+        }
     }
     else drawcrosshair(owner, CROSSHAIR_EDIT);
 }
