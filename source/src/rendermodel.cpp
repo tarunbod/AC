@@ -863,9 +863,9 @@ void rendermodel(const char *mdl, int anim, int tex, float rad, const vec &o, fl
         m->render(anim|ANIM_NOSKIN, varseed, speed, basetime, o, 0, yaw, pitch, d, a, scale);
         glColorMask(GL_TRUE, GL_TRUE, GL_TRUE, GL_TRUE);
 
-        // glDepthFunc(GL_LEQUAL);
-        // glEnable(GL_BLEND);
-        // glBlendFunc(GL_SRC_ALPHA, GL_ONE_MINUS_SRC_ALPHA);
+        glDepthFunc(GL_LEQUAL);
+        glEnable(GL_BLEND);
+        glBlendFunc(GL_SRC_ALPHA, GL_ONE_MINUS_SRC_ALPHA);
 
         GLfloat color[4];
         glGetFloatv(GL_CURRENT_COLOR, color);
@@ -876,8 +876,8 @@ void rendermodel(const char *mdl, int anim, int tex, float rad, const vec &o, fl
 
     if(anim&ANIM_TRANSLUCENT)
     {
-        // glDepthFunc(GL_LESS);
-        // glDisable(GL_BLEND);
+        glDepthFunc(GL_LESS);
+        glDisable(GL_BLEND);
     }
 
     m->endrender();
